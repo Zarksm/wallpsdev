@@ -55,11 +55,11 @@ const Gallery = () => {
   });
 
   const handleDownload = () => {
-    setDownloadCount((prev) => prev + 1); // Increment download count
+    setDownloadCount((prev) => prev + 1);
   };
 
   return (
-    <div className="relative">
+    <div className="relative">ss
       <Filter
         setCategoryFilter={setCategoryFilter}
         setResolutionFilter={setResolutionFilter}
