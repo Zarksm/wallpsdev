@@ -65,8 +65,9 @@ const Filter = ({ setCategoryFilter, setResolutionFilter }) => {
 
         {/* Dropdowns Container */}
         <div
-          className={`flex flex-col md:flex-row gap-3 transition-all duration-200 ${isVisible ? "ml-0" : "ml-[-2000px]"
-            }`}
+          className={`flex flex-col md:flex-row gap-3 transition-all duration-200 ${
+            isVisible ? "ml-0" : "ml-[-2000px]"
+          }`}
         >
           <div className="flex items-center">
             <Select onValueChange={handleCategoryChange} value={category}>
@@ -76,10 +77,34 @@ const Filter = ({ setCategoryFilter, setResolutionFilter }) => {
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Categories</SelectLabel>
-                  <SelectItem value="Animal">Animal</SelectItem>
+                  <SelectItem value="Animal">Animals</SelectItem>
                   <SelectItem value="Islamic">Islamic</SelectItem>
                   <SelectItem value="Aesthetic">Aesthetic</SelectItem>
                   <SelectItem value="Nature">Nature</SelectItem>
+                  <SelectItem value="Space and Sci-Fi">
+                    Space and Sci-Fi
+                  </SelectItem>
+                  <SelectItem value="Abstract and Minimalist">
+                    Abstract and Minimalist
+                  </SelectItem>
+                  <SelectItem value="Cityscapes and Architecture">
+                    Cityscapes and Architecture
+                  </SelectItem>
+                  <SelectItem value="Fantasy and Superheroes">
+                    Fantasy and Superheroes
+                  </SelectItem>
+                  <SelectItem value="Cars and Vehicles">
+                    Cars and Vehicles
+                  </SelectItem>
+                  <SelectItem value="Art and Photography">
+                    Art and Photography
+                  </SelectItem>
+                  <SelectItem value="Anime and Gaming">
+                    Anime and Gaming
+                  </SelectItem>
+                  <SelectItem value="Quotes and Typography">
+                    Quotes and Typography
+                  </SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>

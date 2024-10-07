@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Wallps For You",
+  title: "Free Wallpaper For You",
   description: "Free 4k wallpapers for your desktop or phone",
 };
 

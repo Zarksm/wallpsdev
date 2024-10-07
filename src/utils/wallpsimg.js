@@ -1,120 +1,641 @@
 // utils/api.js
 
 export const imageData = [
-  // Nature Images
   {
     id: 1,
-    image: "/images/phone/animal/a1.jpg", // Custom image
+    image: "/images/phone/Animals/a1.jpg",
     category: "Animal",
     res: "phone",
   },
   {
     id: 2,
-    image: "/images/phone/animal/a2.jpg", // Custom image
-    category: "Animal",
-    res: "desktop",
-  },
-  {
-    id: 3,
-    image: "/images/phone/animal/a3.jpg", // Custom image
+    image: "/images/phone/Animals/a2.jpg",
     category: "Animal",
     res: "phone",
   },
-
-  // islamic
+  {
+    id: 3,
+    image: "/images/phone/Animals/a3.jpg",
+    category: "Animal",
+    res: "phone",
+  },
   {
     id: 4,
-    image: "/images/phone/islamic/i1.jpg", // Custom image
-    category: "Islamic",
+    image: "/images/phone/Animals/a4.jpg",
+    category: "Animal",
     res: "phone",
   },
   {
     id: 5,
-    image: "/images/phone/islamic/i2.jpg", // Custom image
-    category: "Islamic",
+    image: "/images/phone/Animals/a5.jpg",
+    category: "Animal",
     res: "phone",
   },
-
   {
     id: 6,
-    image: "/images/phone/islamic/i3.jpg", // Custom image
-    category: "Islamic",
-    res: "desktop",
+    image: "/images/phone/Animals/a6.jpg",
+    category: "Animal",
+    res: "phone",
   },
   {
     id: 7,
-    image: "/images/phone/islamic/i4.jpg", // Custom image
-    category: "Islamic",
-    res: "desktop",
-  },
-
-  {
-    id: 8,
-    image: "/images/phone/islamic/i2.jpg", // Custom image
-    category: "Islamic",
+    image: "/images/phone/Animals/a7.jpg",
+    category: "Animal",
     res: "phone",
   },
-
+  {
+    id: 8,
+    image: "/images/phone/Animals/a8.jpg",
+    category: "Animal",
+    res: "phone",
+  },
   {
     id: 9,
-    image: "/images/phone/islamic/i3.jpg", // Custom image
-    category: "Islamic",
-    res: "desktop",
+    image: "/images/phone/Animals/a9.jpg",
+    category: "Animal",
+    res: "phone",
   },
   {
     id: 10,
-    image: "/images/phone/islamic/i4.jpg", // Custom image
-    category: "Islamic",
-    res: "desktop",
+    image: "/images/phone/Animals/a10.jpg",
+    category: "Animal",
+    res: "phone",
   },
-  
-  // aesthetic
   {
     id: 11,
-    image: "/images/phone/aesthetic/aes1.jpg", // Custom image
-    category: "Aesthetic",
+    image: "/images/phone/Animals/a11.jpg",
+    category: "Animal",
     res: "phone",
   },
   {
     id: 12,
-    image: "/images/phone/aesthetic/aes2.jpg", // Custom image
-    category: "Aesthetic",
+    image: "/images/phone/Animals/a12.jpg",
+    category: "Animal",
     res: "phone",
   },
   {
     id: 13,
-    image: "/images/phone/aesthetic/aes3.jpg", // Custom image
-    category: "Aesthetic",
+    image: "/images/phone/Animals/a13.jpg",
+    category: "Animal",
     res: "phone",
   },
   {
     id: 14,
-    image: "/images/phone/aesthetic/aes4.jpg", // Custom image
-    category: "Aesthetic",
-    res: "phone", 
+    image: "/images/phone/Animals/a14.jpg",
+    category: "Animal",
+    res: "phone",
   },
   {
     id: 15,
-    image: "/images/phone/aesthetic/aes5.jpg", // Custom image
-    category: "Aesthetic",
+    image: "/images/phone/Animals/a15.jpg",
+    category: "Animal",
     res: "phone",
   },
   {
     id: 16,
-    image: "/images/phone/aesthetic/aes6.jpg", // Custom image
-    category: "Aesthetic",
+    image: "/images/phone/FantasyandSuperheroes/fas1.jpg",
+    category: "Fantasy and Superheroes",
     res: "phone",
   },
   {
     id: 17,
-    image: "/images/phone/aesthetic/aes7.jpg", // Custom image
-    category: "Aesthetic",
+    image: "/images/phone/FantasyandSuperheroes/fas2.jpg",
+    category: "Fantasy and Superheroes",
     res: "phone",
   },
   {
     id: 18,
-    image: "/images/phone/aesthetic/aes8.jpg", // Custom image
+    image: "/images/phone/FantasyandSuperheroes/fas3.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 20,
+    image: "/images/phone/FantasyandSuperheroes/fas5.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 21,
+    image: "/images/phone/FantasyandSuperheroes/fas6.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 22,
+    image: "/images/phone/FantasyandSuperheroes/fas7.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 23,
+    image: "/images/phone/FantasyandSuperheroes/fas8.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 24,
+    image: "/images/phone/FantasyandSuperheroes/fas9.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 25,
+    image: "/images/phone/FantasyandSuperheroes/fas10.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 26,
+    image: "/images/phone/FantasyandSuperheroes/fas11.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 27,
+    image: "/images/phone/FantasyandSuperheroes/fas12.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 28,
+    image: "/images/phone/FantasyandSuperheroes/fas13.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 29,
+    image: "/images/phone/FantasyandSuperheroes/fas14.jpg",
+    category: "Fantasy and Superheroes",
+    res: "phone",
+  },
+  {
+    id: 30,
+    image: "/images/phone/Aesthetics/aes1.jpg",
     category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 31,
+    image: "/images/phone/Aesthetics/aes2.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 32,
+    image: "/images/phone/Aesthetics/aes3.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 33,
+    image: "/images/phone/Aesthetics/aes4.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 34,
+    image: "/images/phone/Aesthetics/aes5.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 35,
+    image: "/images/phone/Aesthetics/aes6.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 36,
+    image: "/images/phone/Aesthetics/aes7.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 37,
+    image: "/images/phone/Aesthetics/aes8.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 38,
+    image: "/images/phone/Aesthetics/aes9.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 39,
+    image: "/images/phone/Aesthetics/aes10.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 40,
+    image: "/images/phone/Aesthetics/aes11.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 41,
+    image: "/images/phone/Aesthetics/aes12.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 42,
+    image: "/images/phone/Aesthetics/aes13.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 44,
+    image: "/images/phone/Aesthetics/aes15.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 45,
+    image: "/images/phone/Aesthetics/aes16.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 46,
+    image: "/images/phone/Aesthetics/aes17.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+
+  {
+    id: 47,
+    image: "/images/phone/Aesthetics/aes18.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 48,
+    image: "/images/phone/Aesthetics/aes19.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 49,
+    image: "/images/phone/Aesthetics/aes20.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 50,
+    image: "/images/phone/Aesthetics/aes21.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 51,
+    image: "/images/phone/Aesthetics/aes22.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },  
+  {
+    id: 52,
+    image: "/images/phone/Aesthetics/aes23.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 53,
+    image: "/images/phone/Aesthetics/aes24.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 54,
+    image: "/images/phone/Aesthetics/aes25.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 55,
+    image: "/images/phone/Aesthetics/aes26.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 56,
+    image: "/images/phone/Aesthetics/aes27.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 57,
+    image: "/images/phone/Aesthetics/aes28.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 58,
+    image: "/images/phone/Aesthetics/aes29.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 59,
+    image: "/images/phone/Aesthetics/aes30.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 60,
+    image: "/images/phone/Aesthetics/aes31.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 61,
+    image: "/images/phone/Aesthetics/aes32.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 62,
+    image: "/images/phone/Aesthetics/aes33.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 63,
+    image: "/images/phone/Aesthetics/aes34.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 64,
+    image: "/images/phone/Aesthetics/aes35.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 65,
+    image: "/images/phone/Aesthetics/aes36.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 66,
+    image: "/images/phone/Aesthetics/aes37.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 67,
+    image: "/images/phone/Aesthetics/aes38.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 68,
+    image: "/images/phone/Aesthetics/aes39.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 69,
+    image: "/images/phone/Aesthetics/aes40.jpg",
+    category: "Aesthetic",
+    res: "phone",
+  },
+  {
+    id: 70,
+    image: "/images/phone/AnimeandGaming/aag1.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 71,
+    image: "/images/phone/AnimeandGaming/aag2.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 72,
+    image: "/images/phone/AnimeandGaming/aag3.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 73,
+    image: "/images/phone/AnimeandGaming/aag4.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 74,
+    image: "/images/phone/AnimeandGaming/aag5.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 75,
+    image: "/images/phone/AnimeandGaming/aag6.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 76,
+    image: "/images/phone/AnimeandGaming/aag7.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 77,
+    image: "/images/phone/AnimeandGaming/aag8.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 78,
+    image: "/images/phone/AnimeandGaming/aag9.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 79,
+    image: "/images/phone/AnimeandGaming/aag10.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 80,
+    image: "/images/phone/AnimeandGaming/aag11.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 81,
+    image: "/images/phone/AnimeandGaming/aag12.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 82,
+    image: "/images/phone/AnimeandGaming/aag13.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 83,
+    image: "/images/phone/AnimeandGaming/aag14.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 84,
+    image: "/images/phone/AnimeandGaming/aag15.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 85,
+    image: "/images/phone/AnimeandGaming/aag16.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 86,
+    image: "/images/phone/AnimeandGaming/aag17.jpg",
+    category: "Anime and Gaming",
+    res: "phone",
+  },
+  {
+    id: 87,
+    image: "/images/phone/Islamic/i1.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 88,
+    image: "/images/phone/Islamic/i2.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 89,
+    image: "/images/phone/Islamic/i3.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 90,
+    image: "/images/phone/Islamic/i4.jpg",
+    category: "Islamic",
+    res: "phone",
+    },
+  {
+    id: 91,
+    image: "/images/phone/Islamic/i5.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 92,
+    image: "/images/phone/Islamic/i6.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 93,
+    image: "/images/phone/Islamic/i7.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 94,
+    image: "/images/phone/Islamic/i8.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 95,
+    image: "/images/phone/Islamic/i9.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 96,
+    image: "/images/phone/Islamic/i10.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 97,
+    image: "/images/phone/Islamic/i11.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 98,
+    image: "/images/phone/Islamic/i12.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 99,
+    image: "/images/phone/Islamic/i13.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 100,
+    image: "/images/phone/Islamic/i14.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 101,
+    image: "/images/phone/Islamic/i15.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 102,
+    image: "/images/phone/Islamic/i16.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 103,
+    image: "/images/phone/Islamic/i17.jpg",
+    category: "Islamic",
+    res: "phone",
+  }, 
+  {
+    id: 104,
+    image: "/images/phone/Islamic/i18.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 105,
+    image: "/images/phone/Islamic/i19.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 106,
+    image: "/images/phone/Islamic/i20.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 107,
+    image: "/images/phone/Islamic/i21.jpg",
+    category: "Islamic",
+    res: "phone",
+  },
+  {
+    id: 108,
+    image: "/images/phone/Islamic/i22.jpg",
+    category: "Islamic",
     res: "phone",
   },
 ];

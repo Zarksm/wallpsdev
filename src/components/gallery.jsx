@@ -59,20 +59,28 @@ const Gallery = () => {
   };
 
   return (
-    <div className="relative">ss
+    <div className="relative">
+      ss
       <Filter
         setCategoryFilter={setCategoryFilter}
         setResolutionFilter={setResolutionFilter}
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
         {filteredImages.slice(0, visibleCount).map((item, index) => (
-          <ImageCard
+          <div
             key={item.id}
-            item={item}
-            index={index}
-            images={filteredImages}
-            onDownload={handleDownload} // Pass the download handler
-          />
+            className={`${
+              item.res === "desktop" ? "row-span-1" : "row-span-2"
+            }`}
+          >
+            <ImageCard
+              key={item.id}
+              item={item}
+              index={index}
+              images={filteredImages}
+              onDownload={handleDownload} // Pass the download handler
+            />
+          </div>
         ))}
 
         {/* Skeleton loader for images not yet loaded */}
@@ -94,3 +102,25 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+{
+  /* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+        {filteredImages.slice(0, visibleCount).map((item, index) => (
+          <ImageCard
+            key={item.id}
+            item={item}
+            index={index}
+            images={filteredImages}
+            onDownload={handleDownload} // Pass the download handler
+          />
+        ))}
+
+        
+        {loading && <SkeletonLoader />}
+
+        
+        {visibleCount < filteredImages.length && (
+          <LoadMoreButton loading={loading} loadMoreImages={loadMoreImages} />
+        )}
+      </div> */
+}
