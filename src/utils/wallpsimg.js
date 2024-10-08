@@ -722,4 +722,23 @@ export const imageData = [
     category: "Nature",
     res: "phone",
   },
+
+  {
+    id: 122,
+    image: "/images/phone/SpaceandScifi/sas1.jpg",
+    category: "Space and Sci-Fi",
+    res: "phone",
+  },
+  {
+    id: 123,
+    image: "/images/phone/SpaceandScifi/sas2.jpg",
+    category: "Space and Sci-Fi",
+    res: "phone",
+  },
+  {
+    id: 124,
+    image: "/images/phone/SpaceandScifi/sas3.jpg",
+    category: "Space and Sci-Fi",
+    res: "phone",
+  },
 ];
