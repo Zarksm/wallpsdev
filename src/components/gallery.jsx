@@ -69,16 +69,15 @@ const Gallery = () => {
         {filteredImages.slice(0, visibleCount).map((item, index) => (
           <div
             key={item.id}
-            className={`${
-              item.res === "desktop" ? "row-span-1" : "row-span-2"
-            }`}
+            className={`${item.res === "desktop" ? "row-span-1" : "row-span-2"
+              }`}
           >
             <ImageCard
               key={item.id}
               item={item}
               index={index}
               images={filteredImages}
-              onDownload={handleDownload} // Pass the download handler
+              onDownload={handleDownload}
             />
           </div>
         ))}
