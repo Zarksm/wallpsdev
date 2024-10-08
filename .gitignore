@@ -36,3 +36,36 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# Here’s an example of objects you could associate with each category based on the theme of image wallpapers:
+
+# Nature:
+# Mountains, rivers, forests, sunsets, flowers (bunga), beaches, and waterfalls.
+
+# Animals:
+# Lions, elephants, birds, dogs, cats, marine life (whales, dolphins), and exotic animals (tigers, giraffes).
+
+# Space & Sci-Fi:
+# Planets, stars, galaxies, nebulae, astronauts, spaceships, alien worlds, and futuristic cities.
+
+# Abstract & Minimalist:
+# Geometric shapes, color gradients, minimal patterns, abstract art, monochromatic designs, and clean typography.
+
+# Cityscapes & Architecture:
+# City skylines, famous landmarks (Eiffel Tower, Big Ben), modern skyscrapers, old buildings, streetscapes, and bridges.
+
+# Fantasy & Superheroes:
+# Dragons, castles, wizards, knights, mythical creatures, superheroes (Marvel, DC characters), and magical landscapes.
+
+# Cars & Vehicles:
+# Sports cars, vintage cars, motorcycles, trucks, airplanes, boats, and futuristic vehicles.
+
+# Art & Photography:
+# Paintings, drawings, graffiti, black-and-white photography, street photography, portraits, and close-up nature shots.
+
+# Anime & Gaming:
+# Popular anime characters (Naruto, Goku), game characters (Mario, Link), fantasy worlds from games, mecha robots, and anime-style art.
+
+# Quotes & Typography:
+# Inspirational quotes, motivational phrases, artistic fonts, minimal text-based art, and graphic design focused on words.

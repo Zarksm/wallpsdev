@@ -13,6 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Textarea } from "@/components/ui/textarea"
 import { FaMessage } from "react-icons/fa6";
 import { useToast } from "@/hooks/use-toast"; // Import the toast hook
 
@@ -24,6 +25,15 @@ const RequestSheet = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage sheet visibility
 
   const handleSend = async () => {
+
+    if (!name || !message) {
+      toast({
+        variant: "destructive", // Optional: set the variant to "destructive" to indicate an error
+        description: "Name and message are required", // Show toast when inputs are empty
+      });
+      return; // Exit the function early if the input is invalid
+    }
+
     setLoading(true); // Set loading to true
     try {
       const res = await fetch("/api/send-request", {
@@ -36,7 +46,7 @@ const RequestSheet = () => {
 
       if (res.ok) {
         toast({
-          description: "Your message has been sent.", // Show toast on success
+          description: "Thank you! Your message has been sent.", // Show toast on success
         });
         setName(""); // Clear the form fields after success
         setMessage("");
@@ -44,6 +54,7 @@ const RequestSheet = () => {
       } else {
         const errorMessage = await res.text(); // Get error message from response
         toast({
+          variant: "destructive",
           description: `Failed to send request: ${errorMessage}`, // Show toast on failure
         });
       }
@@ -65,15 +76,15 @@ const RequestSheet = () => {
         </div>
       </SheetTrigger>
       <SheetContent>
-        <SheetHeader>
+        <SheetHeader className="mt-5">
           <SheetTitle>Request Image or Send a Message</SheetTitle>
           <SheetDescription>
-            Fill in the details below and send your request.
+            Fill in the details below.
           </SheetDescription>
         </SheetHeader>
         <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
+          <div className="flex flex-col md:grid md:grid-cols-4 gap-4 md:items-center">
+            <Label htmlFor="name" className="md:text-right">
               Name
             </Label>
             <Input
@@ -84,11 +95,11 @@ const RequestSheet = () => {
               className="col-span-3"
             />
           </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="message" className="text-right">
+          <div className="flex flex-col md:grid md:grid-cols-4 gap-4 md:items-center">
+            <Label htmlFor="message" className="md:text-right">
               Message
             </Label>
-            <Input
+            <Textarea
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -103,7 +114,7 @@ const RequestSheet = () => {
             onClick={handleSend}
             disabled={loading} // Disable button when loading
           >
-            {loading ? "Sending..." : "Send Request"} {/* Show loading text */}
+            {loading ? "Sending..." : "Send"} {/* Show loading text */}
           </Button>
         </SheetFooter>
       </SheetContent>
